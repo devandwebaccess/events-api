@@ -54,7 +54,7 @@ app.get("/scrape", async (req, res) => {
         .find("span.sc-fyofxi-5.gJmuwa:last-child")
         .text()
         .trim();
-      const linkTo = $(element).find("div .sc-erggfp-0.jMGoYj a").attr("href");
+      const linkTo = $(element).find(".sc-erggfp-0.ixLVeF a").attr("href");
 
       const eventData = {
         date,
