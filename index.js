@@ -68,6 +68,8 @@ app.get("/scrape", async (req, res) => {
       eventDataList.push(eventData);
     });
 
+    console.log(eventDataList);
+
     res.json(eventDataList);
   } catch (error) {
     console.error("Error scraping data:", error?.message);
